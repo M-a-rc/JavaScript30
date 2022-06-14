@@ -61,11 +61,14 @@
   window.addEventListener('keydown', function(event) {
 
   const audio = document.querySelector(`audio[data-key = "${event.keyCode}"]`)
+  const key = document.querySelector(`.key[data-key = "${event.keyCode}"]`)
 
   if(!audio) return // Stop alltoghether if no audio
   audio.currentTime = 0 // Rewind audio to 0 to enable double press
 
   audio.play()
+
+  key.classList.add('playing')
   })
 </script>
 
