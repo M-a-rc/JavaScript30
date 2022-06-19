@@ -88,6 +88,12 @@
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 
+    const alphabetical = people.sort((a,b) => {
+      return a.first - b.first
+    })
+
+    // console.log(alphabetical)
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
